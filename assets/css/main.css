@@ -1326,16 +1326,16 @@ input, select, textarea {
 
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
-		font-weight: 300;
+		font-weight: 1;
 		color: #777777;
-		font-size: 20pt;
-		line-height: 1.75em;
+		font-size: 14pt;
+		line-height: 1.25em;
 	}
 
 		@media screen and (max-width: 1680px) {
 
 			body, input, textarea, select {
-				font-size: 15pt;
+				font-size: 12pt;
 			}
 
 		}
@@ -2381,7 +2381,7 @@ input, select, textarea {
 }
 
 .image-list-small .details .image-author {
-  display: block;
+  display: center;
   color: #717171;
   font-size: 10px;
   font-weight: normal;
