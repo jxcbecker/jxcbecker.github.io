@@ -2236,7 +2236,7 @@ input, select, textarea {
 			.spotlight .image-mini {
 			display: inline-block;
 			margin-left: 0em;
-			padding: 0.65em;
+			padding: 1.0em;
 			border-radius: 100%;
 			border: solid 1px;
 		}
