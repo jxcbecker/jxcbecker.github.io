@@ -2340,7 +2340,7 @@ input, select, textarea {
 
 .image-list-small li {
   display: inline-block;
-  width: 220px;
+  width: 210px;
   margin: 0 12px 30px;
 }
 
@@ -2352,7 +2352,7 @@ input, select, textarea {
   text-decoration: none;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 175px;
+  height: 210px;
   margin: 0;
   padding: 0;
   border: 1px solid #216583;
