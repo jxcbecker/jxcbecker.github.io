@@ -1307,7 +1307,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("images/overlay.png"), url("images/WASP-47_Lonely.png");
+		background-image: url("images/overlay.png"), url("images/WASP-47_Lonely.jpg");
 		background-repeat: repeat, no-repeat;
 		background-size: cover;
 		background-attachment: fixed;

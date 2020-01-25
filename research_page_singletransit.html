@@ -25,17 +25,34 @@
 					<div id="main">
                       <article id="multi" class="panel">
 					<h2><center>Single Transit Events and HIP 41378</center></h2>
-<p>One of the challenges with K2 and TESS data is the limited baseline. Kepler's ~4 year baseline meant that for a planet to transit only once during data collection, its orbital period had to be very long. Some TESS sectors have only 27 days of data, and K2 campaigns were generally <a href="https://keplerscience.arc.nasa.gov/k2-fields.html">around 80 days</a>.  <br><br>
-	
-	What this means is that many planets transit only once during the baseline of data we have collected. My favorite example of this is in the HIP 41378 system (Vanderburg, Becker et al. 2016, and Becker, Vanderburg et al 2019). The HIP 41378 system’s original data came from campaign 5 (C5), and three different planets transited only once in that campaign: <br>
-	[image] 
-	<br><br>
-	The difficulty with single transit events is that although you can measure the shape of the event and its duration, you don’t actually know the orbital period of the planet (this is because the eccentricity of the planet is also unknown, as is the direction of the line of nodes). Eventually, we will want to study these planets more, which requires figuring out their orbital periods so that we can find them again. I have a code hosted here on GitHub that computes the probability distribution for the orbital periods of the planets in the HIP 41378 system, based on the measured system parameters we had when we discovered them. Combining this kind of probabilistic analysis with carefully planned follow-up observations will generally allow the recovery of the true orbital period of the planet so that we can continue to study its transits. <br><br>
-	For HIP 41378, Andrew, myself, and collaborators proposed to observe the star again in K2’s campaign 18 (C18). We were hoping that at least one of the three planets that only transited once in C5 might transit again - the probability calculations we did seemed to imply it was a decent chance that they might! Sure enough, once we got the data, we saw two of the planets transit again: <br><br>[image]<br><br> This meant that even though we STILL didn’t know the true orbital period of these planets, we at least had a discrete set of possible options. In Becker, Vanderburg et al. 2019, we combined dynamics, the transit data, and ground-based data from HAT, WASP, and KELT to attempt to narrow down the periods even further. <br><br>
-	<ol>See other links related to this project: 
-	<li>The discovery paper of the HIP 41378 planets: Vanderburg, Becker, et al. (2016) </li>
-	<li>Our follow-up paper using the new C18 data and ground-based data from HAT, KELT, and WASP to make better estimates: Becker, Vanderburg, et al. (2019) </li>
-	<li>My GitHub repository hosting the simple code to get distributions of orbital periods from the HIP 41378 planet parameters. </li></ol>
+					<p>One of the challenges with K2 and TESS data is the limited baseline. Kepler's ~4 year baseline meant that for a planet to transit only once during data collection, its orbital period had to be very long. Some TESS sectors have only 27 days of data, and K2 campaigns were generally <a href="https://keplerscience.arc.nasa.gov/k2-fields.html">around 80 days</a>. <br>
+					  <br>
+					  What this means is that many planets transit only once during the baseline of data we have collected. My favorite example of this is in the HIP 41378 system (Vanderburg, Becker et al. 2016, and Becker, Vanderburg et al 2019). The 2016 discovery of five planets in the K2 data painted the picture of a inner system with planets orbiting at 15 and 30 days, but the three other planets were harder to understand. </p>
+						  
+						  <center> 
+						<figure>
+ <img src="images/HIP_41378_art.jpg" width="556 " height="417" alt="Art by J. Becker"/>
+ <figcaption>
+Schematic of the HIP 41378 system. </figcaption>
+</figure></center>
+						  
+				<p>The HIP 41378 system’s original data came from campaign 5 (C5), and the three outer planets transited only once in that campaign. The difficulty with single transit events is that although you can measure the shape of the event and its duration, you don’t actually know the orbital period of the planet (this is because the eccentricity of the planet is also unknown, as is the direction of the line of nodes). Eventually, we will want to study these planets more, which requires figuring out their orbital periods so that we can find them again. I have a code hosted here on GitHub that computes the probability distribution for the orbital periods of the planets in the HIP 41378 system, based on the measured system parameters we had when we discovered them. Combining this kind of probabilistic analysis with carefully planned follow-up observations will generally allow the recovery of the true orbital period of the planet so that we can continue to study its transits. <br>
+  <br>
+					  For HIP 41378, Andrew, myself, and collaborators proposed to observe the star again in K2’s campaign 18 (C18). We were hoping that at least one of the three planets that only transited once in C5 might transit again - the probability calculations we did seemed to imply it was a decent chance that they might! Sure enough, once we got the data, we saw two of the planets transit again. 
+						<br>
+						<center> 
+						<figure>
+ <img src="images/hip_data.png" width="550" height="562" alt="Figure 1 from Becker, Vanderburg et al. 2019"/>
+ <figcaption>
+ Figure 1 from Becker, Vanderburg et al. 2019, showing all the ground-based and space-based photometric data of HIP 41378 as of 2019. 
+ </figcaption>
+</figure></center>
+						
+					  </p>
+					<p><ol>See other links related to this project: 
+	<li>The discovery paper of the HIP 41378 planets: <a href="https://arxiv.org/pdf/1606.08441.pdf">Vanderburg, Becker, et al. (2016)</a> </li>
+	<li>Our follow-up paper using the new C18 data and ground-based data from HAT, KELT, and WASP to make better estimates: <a href="https://arxiv.org/pdf/1809.10688.pdf">Becker, Vanderburg, et al. (2019)</a> </li>
+	<li>See <a href="https://github.com/jxcbecker/">my GitHub</a> for a repository hosting the simple code to get distributions of orbital periods from the HIP 41378 planet parameters. </li></ol>
                        
                       </article>
 
