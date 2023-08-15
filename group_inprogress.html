@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<!--
+    Plain-Academic by Vasilios Mavroudis
+    Released under the Simplified BSD License/FreeBSD (2-clause) License.
+    https://github.com/mavroudisv/plain-academic
+-->
+
+<html lang="en"><head>
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88463471-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-88463471-3');
+</script>
+  <title>Becker</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel='stylesheet' type='text/css'>
+</head> 
+
+
+<!-- Navigation -->
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2a2b2a;
+}
+.a, a:hover {
+  text-decoration: none;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+  padding: 30px;
+  max-width: 1650px;
+  margin: auto;
+}
+
+.news-item {
+  border: 1px solid #2a2b2a;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: none;
+  color: #2a2b2a;
+}
+
+
+
+.news-item:hover {
+  background-color: #fdeded;
+  border: 3px solid #EA3C3C;
+}
+
+@media screen and (min-width: 500px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #ebebeb;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #EA3C3C;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #C5050C;
+  color: white;
+}
+</style>
+
+</head>
+<body style="background-color:#F4F6F5;">
+
+	
+<div class="topnav">
+    <a class="active" href="index.html"  target="_top">Home</a>
+  <a href="news.html"  target="_top">News</a>
+  <a href="research.html"  target="_top">Research</a>
+  <a href="about.html" target="_top">About</a>
+  <a href="group.html" target="_top">Group</a>
+  <a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0002-7733-4522&sort=date%20desc%2C%20bibcode%20desc&p_=0" target="_blank">Publications</a>
+</div>
+
+
+<!-- Add this style block to your head section -->
+
+
+
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Group Members</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel='stylesheet' type='text/css'>
+  <!-- Your CSS Styles Here -->
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #2a2b2a;
+    }
+
+    .grid-container {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 30px;
+      padding: 30px;
+      max-width: 1650px;
+      margin: auto;
+	
+    }
+	  .grid-container-center {
+  display: flex;
+  justify-content: center;
+  grid-gap: 30px;
+  padding: 30px;
+  max-width: 1650px;
+  margin: auto;
+	}
+	
+
+    .member-item {
+      border: 1px solid #2a2b2a;
+      padding: 15px;
+      border-radius: 10px;
+      background-color: none;
+      color: #2a2b2a;
+    }
+
+    .member-item:hover {
+      border: 3px solid #EA3C3C;
+    }
+
+@media screen and (min-width: 500px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 1500px) {
+  .grid-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+
+    .member-image {
+      display: block;
+      margin: auto;
+      padding-bottom: 10px;
+    }
+
+    .member-name {
+      color: #c5050c;
+      font-weight: bold;
+      text-align: center;
+    }
+a, a:hover {
+  text-decoration: none;
+}
+	  
+	  
+</style>
+
+</head>
+<body style="background-color:#F4F6F5;">
+
+  <!-- Your Navigation Here -->
+
+  <center>
+    <h1><b><p style="color:#c5050c">Group Principal Investigator</p></b></h1>
+  </center>
+  
+  <!-- Page Content -->
+	
+<!-- Grid container 1 -->
+<div class="grid-container-center">
+    <div class="member-item">
+      <img src="images/becker_.jpg" width="200" height="200"/>
+		<center>
+      <h3>Dr. Juliette Becker</h3>
+			<p>Professor of Astronomy</p><p>University of Wisconsin - Madison</p>
+			</center>
+    </div>
+  </a>
+</div>
+
+	
+	
+	
+	
+	
+	
+	 <center>
+    <h1><b><p style="color:#c5050c">Graduate Students</p></b></h1>
+  </center>
+  
+  <!-- Page Content -->
+	
+<!-- Grid container 1 -->
+<div class="grid-container-center">
+    <div class="member-item">
+      <img src="images/pic08.jpg" width="200" height="200"/>
+		<center>
+      <p class="member-name">Student A </p>
+			<p>BS 2022, University of XXXX </p><p>Student D is working on ....</p>
+			</center>
+    </div>
+  </a>
+</div>
+	
+	
+	
+	<br>
+	<br>
+	
+
+	
+	
+	<center>
+    <h1><b><p style="color:#c5050c">Undergraduate Students</p></b></h1>
+  </center>
+  
+  <!-- Page Content -->
+  <div class="grid-container">
+
+    <!-- Member 2 -->
+    <a href="http://www.member2website.com" target="_blank">
+      <div class="member-item">
+        <img class="member-image" src="images/pic03.jpg" alt="Member 2" width="200" height="200"/>
+        <p class="member-name">Student A 2</p>
+        <p>Student A is working on.... </p>
+      </div>
+    </a>
+	  
+    <!-- Member 2 -->
+    <a href="http://www.member2website.com" target="_blank">
+      <div class="member-item">
+        <img class="member-image" src="images/pic03.jpg" alt="Member 2" width="200" height="200"/>
+        <p class="member-name">Student A 2</p>
+        <p>Student A is working on.... </p>
+      </div>
+    </a>
+	  
+	  
+    <!-- Member 2 -->
+    <a href="http://www.member2website.com" target="_blank">
+      <div class="member-item">
+        <img class="member-image" src="images/pic03.jpg" alt="Member 2" width="200" height="200"/>
+        <p class="member-name">Student A 2</p>
+        <p>Student A is working on.... </p>
+      </div>
+    </a>
+	  
+	  
+    <!-- Member 2 -->
+    <a href="http://www.member2website.com" target="_blank">
+      <div class="member-item">
+        <img class="member-image" src="images/pic03.jpg" alt="Member 2" width="200" height="200"/>
+        <p class="member-name">Student A 2</p>
+        <p>Student A is working on.... </p>
+      </div>
+    </a>
+	  
+	  
+	  
+
+
+    <!-- More members here -->
+  </div>
+	
+			<br>
+	<br>
+	
+	<center>
+    <h1><b><p style="color:#c5050c">Group Alumni</p></b></h1>
+  </center>
+  
+  <!-- Page Content -->
+  <div class="grid-container">
+    <!-- Member 1 -->
+	  
+	      <!-- Member 1 -->
+    <a href="http://www.member1website.com" target="_blank">
+      <div class="member-item">
+        <img class="member-image" src="images/pic04.jpg" alt="Member 1" width="200" height="200"/>
+        <p class="member-name">Student Name</p>
+        <p>Student X was an undergraduate at the University of Y from 1997-2001. As part of the group, they focused on topic Y and wrote one paper, "The Answer to Y". They are now a consultant at XX company. </p>
+      </div>
+    </a>
+	  
+	      <!-- Member 1 -->
+    <a href="http://www.member1website.com" target="_blank">
+      <div class="member-item">
+        <img class="member-image" src="images/pic02.jpg" alt="Member 1" width="200" height="200"/>
+        <p class="member-name">Student Name</p>
+        <p>Student X was an undergraduate at the University of Y from 1997-2001. As part of the group, they focused on topic Y and wrote one paper, "The Answer to Y". They are now a consultant at XX company. </p>
+      </div>
+    </a>
+	  
+	      <!-- Member 1 -->
+    <a href="http://www.member1website.com" target="_blank">
+      <div class="member-item">
+        <img class="member-image" src="images/pic04.jpg" alt="Member 1" width="200" height="200"/>
+        <p class="member-name">Student Name</p>
+        <p>Student X was an undergraduate at the University of Y from 1997-2001. As part of the group, they focused on topic Y and wrote one paper, "The Answer to Y". They are now a consultant at XX company. </p>
+      </div>
+    </a>
+	  
+	      <!-- Member 1 -->
+    <a href="http://www.member1website.com" target="_blank">
+      <div class="member-item">
+        <img class="member-image" src="images/pic05.jpg" alt="Member 1" width="200" height="200"/>
+        <p class="member-name">Student Name</p>
+        <p>Student X was an undergraduate at the University of Y from 1997-2001. As part of the group, they focused on topic Y and wrote one paper, "The Answer to Y". They are now a consultant at XX company. </p>
+      </div>
+    </a>
+	  
+	      <!-- Member 1 -->
+    <a href="http://www.member1website.com" target="_blank">
+      <div class="member-item">
+        <img class="member-image" src="images/pic06.jpg" alt="Member 1" width="200" height="200"/>
+        <p class="member-name">Student Name</p>
+        <p>Student X was an undergraduate at the University of Y from 1997-2001. As part of the group, they focused on topic Y and wrote one paper, "The Answer to Y". They are now a consultant at XX company. </p>
+      </div>
+    </a>
+	</div>
+	
+  
+</body>
+</html>
+

@@ -5,8 +5,16 @@
     https://github.com/mavroudisv/plain-academic
 -->
 
-<html lang="en">
-<head>
+<html lang="en"><head>
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88463471-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-88463471-3');
+</script>
   <title>Becker</title>
 
   <meta charset="utf-8">
@@ -16,7 +24,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel='stylesheet' type='text/css'>
 </head> 
-<body style="background-color:#F4F6F5;">
 
 
 <!-- Navigation -->
@@ -26,42 +33,65 @@
 <style>
 body {
   margin: 0;
+  padding: 0;
+  background-color: #2a2b2a;
+}
+.a, a:hover {
+  text-decoration: none;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+  padding: 30px;
+  max-width: 1650px;
+  margin: auto;
+}
+
+.news-item {
+  border: 1px solid #2a2b2a;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: none;
+  color: #2a2b2a;
+}
+
+
+
+.news-item:hover {
+  background-color: #fdeded;
+  border: 3px solid #EA3C3C;
+}
+
+@media screen and (min-width: 500px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+body {
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-a:link {
-  color: red;
-}
 
-/* visited link */
-a:visited {
-  color: green;
-}
-
-/* mouse over link */
-a:hover {
-  color: hotpink;
-}
-
-/* selected link */
-a:active {
-  color: blue;
-}
-	
 .topnav {
   overflow: hidden;
   background-color: #333;
-
 }
 
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: #ebebeb;
   text-align: center;
   padding: 20px 30px;
   text-decoration: none;
   font-size: 17px;
-
-
 }
 
 .topnav a:hover {
@@ -74,86 +104,149 @@ a:active {
   color: white;
 }
 </style>
-</head>
-<body>
 
+</head>
+<body style="background-color:#F4F6F5;">
+
+	
 <div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-  <a href="#about">About</a>
-  <a href="#about">About</a>
-  <a href="BeckerCV2020.pdf">CV</a>
+    <a class="active" href="index.html"  target="_top">Home</a>
+  <a href="news.html"  target="_top">News</a>
+  <a href="research.html"  target="_top">Research</a>
+  <a href="about.html" target="_top">About</a>
+  <a href="group.html" target="_top">Group</a>
+  <a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0002-7733-4522&sort=date%20desc%2C%20bibcode%20desc&p_=0" target="_blank">Publications</a>
 </div>
 
 
-
-	
-	
-	
+<!-- Add this style block to your head section -->
 
 
+
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Group Members</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel='stylesheet' type='text/css'>
+  <!-- Your CSS Styles Here -->
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #2a2b2a;
+    }
+
+    .grid-container {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 30px;
+      padding: 30px;
+      max-width: 1650px;
+      margin: auto;
+	
+    }
+	  .grid-container-center {
+  display: flex;
+  justify-content: center;
+  grid-gap: 30px;
+  padding: 30px;
+  max-width: 1650px;
+  margin: auto;
+	}
+	
+
+    .member-item {
+      border: 1px solid #2a2b2a;
+      padding: 15px;
+      border-radius: 10px;
+      background-color: none;
+      color: #2a2b2a;
+    }
+
+    .member-item:hover {
+      border: 3px solid #EA3C3C;
+    }
+
+@media screen and (min-width: 500px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 1500px) {
+  .grid-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+
+    .member-image {
+      display: block;
+      margin: auto;
+      padding-bottom: 10px;
+    }
+
+    .member-name {
+      color: #c5050c;
+      font-weight: bold;
+      text-align: center;
+    }
+a, a:hover {
+  text-decoration: none;
+}
+	  
+	  
+</style>
+
+</head>
+<body style="background-color:#F4F6F5;">
+
+  <!-- Your Navigation Here -->
+
+  <center>
+    <h1><b><p style="color:#c5050c">Group Principal Investigator</p></b></h1>
+  </center>
+  
   <!-- Page Content -->
-    <div class="container">
-
-        <div class="row">
-
-            <!-- Entries Column -->
-          <div class="col-md-8" style="height: 100vh;">
-                
-                <!-- Main Image -->
-                <img class="img-responsive" src="images/bg.jpg" alt=""><br>
-                
-                <div style="margin-top:3%; text-align:justify;">                
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing <a href="#">elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					
-					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-					
-					<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                </div>
-
-			</div> 
-
-            <!-- Contact Info on the Sidebar -->
-          <div class="col-md-4">
-			  <center>
-			  			  <img src="images/juliette.jpg" alt="J. Becker" width=80%>
-                <div style="font-family: 'Oswald', sans-serif; font-size: 45px;"><strong>Juliette Becker</strong></div>
-            <p><strong>jbecker at caltech.edu</strong><br>
-            </p>
-                <p>51 Pgeasi b Postdoctoral Fellow<br>
-					Division of Geological and Planetary Sciences<br>
-                  Caltech<br>
-					</center>
-                </p>
-          </div>
-            
-            
-            <!-- Links on the Sidebar -->
-            <div class="col-md-4" style="margin-top:2%">
-				
-				<center>
-				<a href="https://twitter.com/jcbastro"><i class="fa fa-twitter" style="font-size:50px"></i></a> &nbsp;
-				<a href="https://github.com/jxcbecker"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" ><i class="fa fa-github" style="font-size:50px; color:black"></i></a>    &nbsp;
-				<a href="https://www.youtube.com/@jbecker519"><i class="fa fa-youtube" style="font-size:50px; color:#c5050c"></i></a> &nbsp;
-					<a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0002-7733-4522&sort=date%20desc%2C%20bibcode%20desc&p_=0"><i class="fa fa-book" style="font-size:50px; color:black"></i></a>
-</center> 
-            </div>
-			
-            
-           
-
-            
-        </div>
-
-
+	
+<!-- Grid container 1 -->
+<div class="grid-container-center">
+    <div class="member-item">
+      <img src="images/becker_.jpg" width="200" height="200"/>
+		<center>
+      <h3>Dr. Juliette Becker</h3>
+			<p>Professor of Astronomy</p><p>University of Wisconsin - Madison</p>
+			</center>
     </div>
-    <!-- /.container -->
-    
-    <!-- Other people may like it too! -->
-    <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> 
-    
-</body>
+  </a>
+</div>
 
+	
+	
+	
+	
+	
+	
+	
+  
+</body>
 </html>
+
